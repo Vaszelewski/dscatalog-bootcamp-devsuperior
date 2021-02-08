@@ -11,11 +11,11 @@ const ProductCard = () =>(
             </h6>
             <div className="product-price-container">
                 <span className="product-currency">R$</span>
-                <h3 className="product-price">2.779,00</h3>
+                <h3 className="product-price-container">2.779,00</h3>
             </div>
         </div>
     </div>
 
 );
 
-export default ProductCard
+export default ProductCard;
