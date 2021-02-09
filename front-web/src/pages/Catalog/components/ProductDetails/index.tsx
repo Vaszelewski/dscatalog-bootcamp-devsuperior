@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import './styles.scss';
 import {ReactComponent as ArrowIcon } from '../../../../core/assets/images/arrow.svg'
 import {ReactComponent as ProductImage } from '../../../../core/assets/images/product.svg'
+import ProductPrice from '../../../../core/components/ProductPrice';
 
 type ParamsType = {
     productId: string;
@@ -10,6 +11,8 @@ type ParamsType = {
 
 const ProductDetails = () => {
     const {productId} = useParams<ParamsType>();
+
+    console.log(productId);
     return (
         <div className="product-details-container">
             <div className="card-base border-radius-20 product-details">
@@ -25,6 +28,7 @@ const ProductDetails = () => {
                         <h1 className="product-details-name">
                             Computador Desktop - Intel Core i7
                         </h1>
+                        <ProductPrice price="2.779,00" />
                     </div>
                     <div className="col-6 product-details-card">
                         <h1 className="product-description-title">
