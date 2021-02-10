@@ -13,6 +13,7 @@ const ProductDetails = () => {
     const {productId} = useParams<ParamsType>();
 
     console.log(productId);
+    
     return (
         <div className="product-details-container">
             <div className="card-base border-radius-20 product-details">
