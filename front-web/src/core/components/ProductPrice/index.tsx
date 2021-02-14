@@ -1,4 +1,3 @@
-import { format } from 'path';
 import React from 'react';
 import './styles.scss';
 
